@@ -1,6 +1,4 @@
-﻿
-
-static string[] FreeArray()
+﻿static string[] FreeArray()
 {
     string[] arrayM = new string[] {"1" , "12", "365", "3652", "Jan", "Feb", "Marth", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "December"};
     string[] array = new string[6];
@@ -19,4 +17,10 @@ static string[] FreeArray()
     }
     Console.WriteLine();
     return array;
-}    
+}
+string[] array = FreeArray();
+for(int i = 0; i < array.Length; i++)
+{
+    Console.Write(array[i]);
+    Console.Write(" ");
+}
