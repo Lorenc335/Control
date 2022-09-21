@@ -11,6 +11,11 @@ static string[] FreeArray()
         m = new Random().Next(0, 15);
         Console.Write(arrayM[m]);
         Console.Write(" ");
+        if (arrayM[m].Length <= 3)
+        {
+            array[j] = arrayM[m];
+            j++;
+        }
     }
     Console.WriteLine();
     return array;
